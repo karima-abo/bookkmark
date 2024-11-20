@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <!-- *****************************************start  import fontawson css************************************** -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- *****************************************end  import fontawson css************************************** -->
+
+
+
+  <!-- *****************************************start import  bootstrap  css************************************** -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- *****************************************end  import bootstrap css************************************** -->
+
+  <!-- ................................................. start getfont1............................... -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- ................................................. end getfont1............................... -->
+
+
+
+  <!-- ................................................. start getfont2............................... -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <!--............................................  end get font2................................................. -->
+
+
+
+  <!--............................................  start get font3................................................. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <!--............................................end get font3................................................. -->
+
+
+  <!-- *****************************************start  import main css************************************** -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- *****************************************end import main css************************************** -->
+
+</head>
+
+<body>
+
+
+  <section>
+    <div class="container d-flex flex-column justify-content-center align-items-center position-relative">
+      <div class="header">
+        <h1>
+          Bookmarker
+        </h1>
+      </div>
+      
+      <div class="content w-100">
+
+        <h2 class="text-center">
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+
+
+        <div class="myform">
+          <label for="BookmarkName" class="form-label mt-4"><i class="fa-solid fa-book-bookmark px-2"></i> Site
+            Name</label>
+          <input oninput="validation(this)" type="text" id="bookmarkName" class="form-control mb-5"
+            placeholder="Bookmark Name">
+          <label for="BookmarkUrl" class="form-label mt-2"><i class="fa-solid fa-link px-2"></i> Site URL</label>
+          <input oninput="validation(this)" type="text" id="bookmarkUrl" class="form-control" placeholder="Website URL">
+          <div class="text-center buttt">
+            <button onclick="addWebsit()" class="btn btn-danger px-5 mt-4  mb-4 ">Submit</button>
+          </div>
+
+        </div>
+
+       
+
+
+      </div>
+      <div class="mytable w-100">
+        <input oninput="search()" type="search" id="search" placeholder="search by Name........"
+          class="form-control w-50 m-auto my-3">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th>
+                Index
+              </th>
+              <th>
+                Websit Name
+              </th>
+              <th>
+                Visit
+              </th>
+              <th>
+                Delete
+              </th>
+            </tr>
+          </thead>
+          <tbody id="data">
+  
+          </tbody>
+        </table>
+      </div>
+
+     
+
+
+    </div>
+  </section>
+
+
+
+  <section>
+    
+  </section>
+
+  <div class="light-contianer d-none">
+    <div id="massage" class="massage  ">
+      <header class="d-flex justify-content-between align-items-center">
+        <div class="circls d-flex">
+          <span class="first"></span>
+          <span class="sec"></span>
+          <span class="third"></span>
+        </div>
+        <button onclick="closeModel()" class="btn border-0" id="closeBtn">
+          <i class="fa-solid fa-xmark close fs-3"></i>
+        </button>
+      </header>
+      <p>
+
+        Site Name or Url is not valid, Please follow the <br>
+        rules below :
+      <ol>
+        <li>
+          <i class="fa-regular fa-circle-right p-2"></i>Site name must
+          contain at least 3 characters
+        </li>
+        <li>
+          <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+          valid one
+        </li>
+      </ol>
+
+      </p>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- *****************************************end import bootsrap css************************************** -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- *****************************************end import bootstrap css************************************** -->
+
+  <!-- *****************************************end import main js************************************** -->
+  <script src="js/index.js"></script>
+  <!-- *****************************************end import main js************************************** -->
+
+</body>
+
+</html>
